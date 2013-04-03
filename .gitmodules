@@ -7,3 +7,6 @@
 [submodule "bundle/vundle"]
 	path = bundle/vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "vim-scripts/fcitx.vim"]
+    path = bundle/fcitx.vim
+    url = https://github.com/vim-scripts/fcitx.vim.git

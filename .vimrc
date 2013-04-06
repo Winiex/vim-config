@@ -49,6 +49,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+"Enable line number
+set number
+
 """"""""""""""""""""""""""""""""""""""""
 " Moving around, tabs, windows, buffers"
 """"""""""""""""""""""""""""""""""""""""

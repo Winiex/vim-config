@@ -13,3 +13,6 @@
 [submodule "tpope/vim-rails"]
     path = bundle/vim-rails
     url = https://github.com/tpope/vim-rails.git
+[submodule "scrooloose/nerdtree"]
+    path = bundle/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git

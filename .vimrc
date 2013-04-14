@@ -4,6 +4,10 @@
 colorscheme desert
 set background=dark
 
+if has('gui_running')
+  set guifont=Monaco
+endif
+
 "Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
@@ -109,12 +113,12 @@ call vundle#rc()
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 "Bundle 'mattn/zencoding-vim'
-"Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdtree'
 "Bundle 'tpope/vim-surround'
 "Bundle 'tpope/vim-abolish'
 "Bundle 'tpope/vim-rake'
 "Bundle 'tpope/vim-bundler'
-"Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rails'
 "Bundle 'vim-scripts/vimwiki'
 "Bundle 'msanders/snipmate.vim'
 "Bundle 'mattn/gist-vim'

@@ -126,6 +126,7 @@ Bundle 'tpope/vim-rails'
 "Bundle 'cakebaker/scss-syntax.vim'
 "Bundle 'hallison/vim-markdown'
 "Bundle 'mbbill/code_complete'
+Bundle 'vim-scripts/mru.vim'
 
 """"""""""""""""""""""""""""""""""""""""
 " Helper functions                     "

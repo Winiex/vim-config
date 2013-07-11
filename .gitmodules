@@ -16,3 +16,6 @@
 [submodule "scrooloose/nerdtree"]
     path = bundle/nerdtree
     url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim-scripts/mru.vim"]
+    path = bundle/mru.vim
+    url = https://github.com/vim-scripts/mru.vim.git

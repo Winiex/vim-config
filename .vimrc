@@ -127,6 +127,7 @@ Bundle 'tpope/vim-rails'
 "Bundle 'hallison/vim-markdown'
 "Bundle 'mbbill/code_complete'
 Bundle 'vim-scripts/mru.vim'
+Bundle 'vim-scripts/taglist.vim'
 
 """"""""""""""""""""""""""""""""""""""""
 " Helper functions                     "

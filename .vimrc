@@ -259,6 +259,6 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 """"""""""""""""""""""""""""""""""""""""
 " Persnal keys mappings                "
 """"""""""""""""""""""""""""""""""""""""
-map FF :FufFile<Enter>
-map F :FufCoverageFile<Enter>
+map zf :FufFile<Enter>
+map zcf :FufCoverageFile<Enter>
 map fm gg=G

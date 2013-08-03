@@ -120,7 +120,7 @@ Bundle 'scrooloose/nerdtree'
 "Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rails'
 "Bundle 'vim-scripts/vimwiki'
-"Bundle 'msanders/snipmate.vim'
+Bundle 'msanders/snipmate.vim'
 "Bundle 'mattn/gist-vim'
 "Bundle 'mattn/webapi-vim'
 "Bundle 'cakebaker/scss-syntax.vim'
@@ -128,6 +128,8 @@ Bundle 'tpope/vim-rails'
 "Bundle 'mbbill/code_complete'
 Bundle 'vim-scripts/mru.vim'
 Bundle 'vim-scripts/taglist.vim'
+Bundle 'sukima/xmledit'
+Bundle 'amiorin/vim-project'
 
 """"""""""""""""""""""""""""""""""""""""
 " Helper functions                     "
@@ -191,10 +193,16 @@ function! <SID>BufcloseCloseIt()
 endfunction
 
 """""""""""""""""""""""""""""""""""""""
-" Commen Configurations               "
+" Common Configurations               "
 """""""""""""""""""""""""""""""""""""""
 "Enable syntax hightlighting
 syntax on
+
+"Make NERDTree autmatically started
+au VimEnter *  NERDTree
+
+"Make NERDTree ignore non-source-code files
+let NERDTreeIgnore = ['\.pyc$']
 
 "Enable filetype plugins
 filetype plugin indent on

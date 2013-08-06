@@ -25,3 +25,9 @@
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/vim-project"]
+    path = bundle/vim-project
+    url = https://github.com/amiorin/vim-project.git
+[submodule "bundle/xmledit"]
+    path = bundle/xmledit
+    url = https://github.com/sukima/xmledit.git

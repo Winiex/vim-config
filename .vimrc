@@ -120,13 +120,16 @@ Bundle 'scrooloose/nerdtree'
 "Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rails'
 "Bundle 'vim-scripts/vimwiki'
-"Bundle 'msanders/snipmate.vim'
+Bundle 'msanders/snipmate.vim'
 "Bundle 'mattn/gist-vim'
 "Bundle 'mattn/webapi-vim'
 "Bundle 'cakebaker/scss-syntax.vim'
 "Bundle 'hallison/vim-markdown'
 "Bundle 'mbbill/code_complete'
 Bundle 'vim-scripts/mru.vim'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'sukima/xmledit'
+Bundle 'amiorin/vim-project'
 
 """"""""""""""""""""""""""""""""""""""""
 " Helper functions                     "
@@ -190,10 +193,16 @@ function! <SID>BufcloseCloseIt()
 endfunction
 
 """""""""""""""""""""""""""""""""""""""
-" Commen Configurations               "
+" Common Configurations               "
 """""""""""""""""""""""""""""""""""""""
 "Enable syntax hightlighting
 syntax on
+
+"Make NERDTree autmatically started
+au VimEnter *  NERDTree
+
+"Make NERDTree ignore non-source-code files
+let NERDTreeIgnore = ['\.pyc$']
 
 "Enable filetype plugins
 filetype plugin indent on
@@ -258,6 +267,13 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 """"""""""""""""""""""""""""""""""""""""
 " Persnal keys mappings                "
 """"""""""""""""""""""""""""""""""""""""
-map FF :FufFile<Enter>
-map F :FufCoverageFile<Enter>
-map fm gg=G
+"FuzzyFind shortcuts
+map zff :FufFile<Enter>
+map zf :FufCoverageFile<Enter>
+
+""Format the entire source code file
+map zfm gg=G
+
+"Insert newline without entering insert mode
+nmap <S-Enter> O<Esc>
+nmap <Enter> o<Esc>

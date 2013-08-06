@@ -19,3 +19,9 @@
 [submodule "vim-scripts/mru.vim"]
     path = bundle/mru.vim
     url = https://github.com/vim-scripts/mru.vim.git
+[submodule "bundle/taglist.vim"]
+	path = bundle/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/snipmate.vim"]
+	path = bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
